@@ -89,8 +89,7 @@ HISTDUP=erase
 #   export EDITOR='nvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
+source $ZDOTDIR/functions.zsh
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
@@ -103,7 +102,7 @@ HISTDUP=erase
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
+source $ZDOTDIR/aliases.zsh
 
 eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
